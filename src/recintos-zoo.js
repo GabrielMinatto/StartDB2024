@@ -62,7 +62,7 @@ class RecintosZoo {
                     let animalPresente = this.animaisPermitidos.find(permitido => permitido.especie === animal.especie);
                     return animalPresente && animalPresente.carnivoro;
                 });
-                if (carnivoroPresente) continue; // Pula para o próximo recinto
+                if (carnivoroPresente) continue;
             }
 
             // Um macaco não se sente confortável sem outro animal no recinto, seja da mesma ou outra espécie
