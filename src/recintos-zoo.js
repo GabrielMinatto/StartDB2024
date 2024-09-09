@@ -51,7 +51,6 @@ class RecintosZoo {
             // Itera sob o array de biomas para tentar encontrar um bioma válido
             let biomaCompativel = especieInfo.biomas.some(bioma => recinto.bioma.includes(bioma));
             // Quando há mais de uma espécie no mesmo recinto, é preciso considerar 1 espaço extra ocupado
-            // Um animal se sente confortável se está num bioma adequado e com espaço suficiente para cada indivíduo
             let regraEspaco = espacoLivre >= (especieInfo.tamanho * quantidade) + (outraEspeciePresente ? 1 : 0);
 
             // Animais carnívoros devem habitar somente com a própria espécie
