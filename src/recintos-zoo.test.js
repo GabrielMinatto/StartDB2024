@@ -54,7 +54,7 @@ describe('Recintos do Zoologico', () => {
         expect(resultado.recintosViaveis.length).toBe(1);
     });
 
-    test('Deve encontrar recinto para 1 leopardo', () => {
+    test('Não deve encontrar recinto para 1 leopardo', () => {
 
         const resultado = new RecintosZoo().analisaRecintos('LEOPARDO', 1);
         expect(resultado.erro).toBe("Não há recinto viável");
